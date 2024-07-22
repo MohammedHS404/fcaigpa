@@ -1,4 +1,4 @@
-document.getElementById('calculateGPA').addEventListener('click', () => {
+document.getElementById('calculateGpaButton').addEventListener('click', () => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         chrome.scripting.executeScript(
             {

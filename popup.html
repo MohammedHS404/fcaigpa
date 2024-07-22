@@ -1,17 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>GPA Calculator</title>
     <style>
-        body { font-family: Arial, sans-serif; width: 200px; padding: 10px; }
-        button { width: 100%; padding: 10px; margin-top: 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .gpa-result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <h3>GPA Calculator</h3>
-    <button id="calculateGPA">Calculate GPA</button>
-    <p id="gpaResult"></p>
-    <p id="hoursResult"></p>
+    <h1>GPA Calculator</h1>
+    <p>Follow these steps to calculate your GPA:</p>
+    <ol>
+        <li>Install the GPA Calculator extension in your Chrome browser.</li>
+        <li>
+            Navigate to <b>Registered Courses</b>:
+            <ul>
+                <li><a href="http://193.227.14.58/#/courses-per-students" target="_blank">http://193.227.14.58/#/courses-per-students</a></li>
+                <li><a href="http://newecom.fci.cu.edu.eg/#/courses-per-students" target="_blank">http://newecom.fci.cu.edu.eg/#/courses-per-students</a></li>
+            </ul>
+        </li>
+        <li>Click on the GPA Calculator icon in the Chrome toolbar.</li>
+        <li>Click the <b>Calculate GPA</b> button below to extract data and compute your GPA.</li>
+    </ol>
+    <button id="calculateGpaButton">Calculate GPA</button>
+    <div class="gpa-result" id="gpaResult"></div>
+    <div id="hoursResult"></div>
     <script src="popup.js"></script>
 </body>
 </html>
